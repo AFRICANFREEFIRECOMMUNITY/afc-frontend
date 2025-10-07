@@ -58,7 +58,6 @@ export const ContactForm = () => {
 
         if (response.statusText === "OK") {
           toast.success(response.data.message);
-          // router.push("/home");
           setOpenModal(true);
         } else {
           toast.error("Oops! An error occurred");
